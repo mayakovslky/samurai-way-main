@@ -1,13 +1,20 @@
 import React from 'react';
 import './App.css';
-import {Technologies} from "./Technologies";
-import {Header} from "./Header";
+
 
 function App() {
     return (
-        <div>
-            <Header/>
-            <Technologies/>
+        <div className='app-wrapper'>
+            <header className='header'>
+                <img width={50} src="https://www.seekpng.com/png/full/307-3073829_media-ninja-logo-ninja-logo-png-free.png" alt="Picture"/>
+            </header>
+            <nav className='nav'>
+                <div>Profile</div>
+                <div>Messages</div>
+            </nav>
+            <div className='content'>
+                Main content
+            </div>
         </div>
     );
 }
