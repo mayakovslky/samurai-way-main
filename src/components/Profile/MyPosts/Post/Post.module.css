@@ -1,0 +1,8 @@
+.item {
+    color: firebrick;
+}
+
+.item img {
+    padding: 5px;
+    width: 50px;
+}

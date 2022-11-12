@@ -4,12 +4,3 @@
     grid-area: c;
     background-color: #383737;
 }
-
-.posts {
-    display: flex;
-    flex-direction: column;
-}
-
-.item {
-    color: firebrick;
-}
