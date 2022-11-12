@@ -19,10 +19,10 @@
     display: flex;
     flex-direction: column;
     grid-area: n;
-    background-color: cornflowerblue;
+    background-color: cadetblue;
 }
 
 .content {
     grid-area: c;
-    background-color: rebeccapurple;
+    background-color: cadetblue;
 }
