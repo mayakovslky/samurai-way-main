@@ -1,0 +1,11 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    grid-area: n;
+    background-color: #727171;
+}
+
+.item {
+    color: ghostwhite;
+}
