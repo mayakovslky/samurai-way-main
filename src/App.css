@@ -10,6 +10,13 @@
     grid-gap: 10px;
 }
 
+.app-wrapper-content {
+    padding: 10px;
+    color: white;
+    grid-area: c;
+    background-color: #fdb70b;
+}
+
 
 
 

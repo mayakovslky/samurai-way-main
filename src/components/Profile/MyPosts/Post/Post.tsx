@@ -1,14 +1,22 @@
 import React from "react";
 import s from './Post.module.css';
 
-export const Post = () => {
+type PostType = {
+    likesCount: string
+    message: string
+}
+
+export const Post = (props: PostType) => {
     return (
         <div className={s.item}>
             <img src="https://techtippr.com/wp-content/uploads/2021/08/ninja-background-512.png" alt="Avatar"/>
-            post 1
+            {props.message}
+
             <div>
-                <span>like</span>
+                <span>like {props.likesCount}</span>
             </div>
         </div>
     )
 }
+
+// сделать счетчиков лайков через пропсы

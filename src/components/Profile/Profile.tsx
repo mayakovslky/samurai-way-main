@@ -4,7 +4,7 @@ import {MyPosts} from "./MyPosts/MyPosts";
 
 export const Profile = () => {
     return (
-        <div className={s.content}>
+        <div>
             <div>
                 <img src="https://i.pinimg.com/564x/10/3e/39/103e39b7d430b671138040029cf366af.jpg" alt="Picture"/>
             </div>
