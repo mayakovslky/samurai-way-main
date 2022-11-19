@@ -3,8 +3,8 @@ import s from './Dialogs.module.css';
 
 export const Dialogs = () => {
     return (
-        <div>
+        <div className={s.div}>
             Dialogs
         </div>
     )
-}
+};
