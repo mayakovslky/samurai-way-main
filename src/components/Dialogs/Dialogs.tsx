@@ -2,8 +2,8 @@ import React from "react";
 import s from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
 
-type DialogItemType = {
-    id: any
+type dialogDataType = {
+    id: number
     name: string
 }
 
@@ -12,10 +12,10 @@ type MessageType = {
     message: string
 }
 
-const DialogItem = (props: DialogItemType) => {
+const DialogItem = (props: dialogDataType) => {
     return (
         <div className={s.dialog + ' ' + s.active}>
-            <NavLink to={props.id}>{props.name}</NavLink>
+            <NavLink to={`/${props.id}`}>{props.name}</NavLink>
         </div>
     )
 }
@@ -26,49 +26,33 @@ const Message = (props: MessageType) => {
     )
 }
 
-let dialogsData = [
+let dialogs = [
     {id: 1, name: 'Dimych'},
     {id: 2, name: 'Andrey'},
     {id: 3, name: 'Maria'},
     {id: 4, name: 'Nasty'}
 ]
 
-let dialogsElements = [
-    <DialogItem id={dialogsData[0].id} name={dialogsData[0].name}/>,
-    <DialogItem id={dialogsData[1].id} name={dialogsData[1].name}/>,
-    <DialogItem id={dialogsData[2].id} name={dialogsData[2].name}/>,
-    <DialogItem id={dialogsData[3].id} name={dialogsData[3].name}/>
-]
-
-let messagesData = [
+let messages = [
     {id: 1, message: 'yo'},
     {id: 2, message: 'yo'},
     {id: 3, message: 'hey'},
     {id: 4, message: 'hei hei'}
 ]
 
-let messagesElements = [
-    <Message id={messagesData[0].id} message={messagesData[0].message}/>,
-    <Message id={messagesData[1].id} message={messagesData[1].message}/>,
-    <Message id={messagesData[2].id} message={messagesData[2].message}/>,
-    <Message id={messagesData[3].id} message={messagesData[3].message}/>
-]
+let dialogsElements = dialogs.map(d => <DialogItem id={d.id} name={d.name}/>);
+
+let messagesElements = messages.map(m => <Message id={m.id} message={m.message}/>);
 
 
 export const Dialogs = () => {
     return (
         <div className={s.dialogs}>
             <div className={s.dialogsItems}>
-                {dialogsElements[0]}
-                {dialogsElements[1]}
-                {dialogsElements[2]}
-                {dialogsElements[3]}
+                {dialogsElements}
             </div>
             <div className={s.messages}>
-                {messagesElements[0]}
-                {messagesElements[1]}
-                {messagesElements[2]}
-                {messagesElements[3]}
+                {messagesElements}
             </div>
         </div>
     )
