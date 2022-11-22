@@ -47,6 +47,14 @@ let messagesData = [
     {id: 4, message: 'hei hei'}
 ]
 
+let messagesElements = [
+    <Message id={messagesData[0].id} message={messagesData[0].message}/>,
+    <Message id={messagesData[1].id} message={messagesData[1].message}/>,
+    <Message id={messagesData[2].id} message={messagesData[2].message}/>,
+    <Message id={messagesData[3].id} message={messagesData[3].message}/>
+]
+
+
 export const Dialogs = () => {
     return (
         <div className={s.dialogs}>
@@ -57,10 +65,10 @@ export const Dialogs = () => {
                 {dialogsElements[3]}
             </div>
             <div className={s.messages}>
-                <Message id={messagesData[0].id} message={messagesData[0].message}/>
-                <Message id={messagesData[1].id} message={messagesData[1].message}/>
-                <Message id={messagesData[2].id} message={messagesData[2].message}/>
-                <Message id={messagesData[3].id} message={messagesData[3].message}/>
+                {messagesElements[0]}
+                {messagesElements[1]}
+                {messagesElements[2]}
+                {messagesElements[3]}
             </div>
         </div>
     )
