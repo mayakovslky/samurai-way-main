@@ -3,7 +3,7 @@
     flex-direction: column;
     padding: 20px;
     grid-area: n;
-    background-color: #f6ba24;
+    background-color: #013381;
 }
 
 .item a{
@@ -12,5 +12,5 @@
 }
 
 .item .activeLink {
-    color: black;
+    color: crimson;
 }

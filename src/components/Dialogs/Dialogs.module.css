@@ -1,5 +1,4 @@
 .dialogs {
-    color: black;
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
@@ -9,11 +8,10 @@
 }
 
 .dialog {
-
 }
 
 .active {
-    color: #be91ef;
+    color: crimson;
 }
 
 .messages {
@@ -21,5 +19,6 @@
 }
 
 .message {
+    color: forestgreen;
 
 }
