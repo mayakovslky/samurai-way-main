@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    grid-area: n;
+    margin-bottom: 10px;
+    /*grid-area: n;*/
     background-color: #013381;
 }
 
 .item a{
     text-decoration: none;
-    color: ghostwhite;
+    color: white;
 }
 
 .item .activeLink {
